@@ -1,0 +1,70 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "insert": {
+      "additionalProperties": false,
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "default": "",
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "rename": {
+      "title": "System name",
+      "additionalProperties": false,
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "default": "",
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "addmember": {
+      "additionalProperties": false,
+      "required": [
+        "email"
+      ],
+      "properties": {
+        "email": {
+          "title": "Email",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "modifymember": {
+      "title": "Edit member",
+      "additionalProperties": false,
+      "required": [
+        "permission"
+      ],
+      "properties": {
+        "permission": {
+          "enum": [
+            "administrator",
+            "manager",
+            "editor",
+            "operator",
+            "viewer"
+          ],
+          "default": "viewer",
+          "title": "Permission",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "type": "object"
+}

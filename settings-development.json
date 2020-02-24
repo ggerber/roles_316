@@ -1,0 +1,14 @@
+{
+  "public": {
+    "siteName": "Site",
+    "afterSignin": "/subscribed/systems",
+    "gotoSystem": "/subscribed/schematics",
+    "planRoleMap": {
+      "administrator": ["manage", "edit", "control", "view"],
+      "manager": ["manage", "view"],
+      "editor": ["edit", "view"],
+      "operator": ["control", "view"],
+      "viewer": ["view"]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "listsystems": {
+      "additionalProperties": false,
+      "type": "object"
+    },
+    "navigation": {
+      "additionalProperties": false,
+      "required": ["systemId"],
+      "properties": {
+        "systemId": {
+          "pattern": "^[A-Za-z0-9]{17,24}$",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "type": "object"
+}
